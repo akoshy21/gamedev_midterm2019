@@ -32,8 +32,9 @@ public class TankControl : MonoBehaviour
             rb.AddForce(transform.forward * inputAxis.y * forceMod, ForceMode.Impulse);
         }
 
-        this.transform.Rotate(new Vector3(0, 1, 0), inputAxis.x * turnAdj);
-        //rb.AddTorque(0, inputAxis.x * turnAdj, 0, ForceMode.Impulse);
+        //transform.Rotate(new Vector3(0, 1, 0), inputAxis.x * turnAdj);
 
+        transform.Rotate(new Vector3(0, 1, 0), inputAxis.x * turnAdj);
     }
+
 }
