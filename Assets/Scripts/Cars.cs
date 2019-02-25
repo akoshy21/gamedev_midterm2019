@@ -9,6 +9,9 @@ public class Cars : MonoBehaviour
     public bool[,] carHere;
     public int length, width;
 
+    public float distWidth = 1.5f;
+    public float distLength = -3.5f;
+
     public Vector3 start, curLocation;
 
     private void Start()
@@ -26,9 +29,9 @@ public class Cars : MonoBehaviour
         {
             for (int j = 0; j < length; j++)
             {
-                int trueFalse = Random.Range(0, 1);
+                int trueFalse = Random.Range(0, 2);
 
-                if (i == 1)
+                if (trueFalse == 1)
                 {
                     carHere[i, j] = true;
                 }
@@ -36,6 +39,7 @@ public class Cars : MonoBehaviour
                 {
                     carHere[i, j] = false;
                 }
+                Debug.Log("("+i+" ," + j + ")" + " " + trueFalse + ", " + carHere[i,j]);
             }
         }
     }
@@ -52,10 +56,12 @@ public class Cars : MonoBehaviour
                 {
                     Instantiate(carPrefab, curLocation, Quaternion.identity);
                 }
-                curLocation += new Vector3(1.5f, 0, 0); // adjust distances between cars
-                Debug.Log("spawning " + i + carHere[i, j] + " at: " + curLocation);
+
+                curLocation += new Vector3(distWidth, 0, 0); // adjust distances between cars
+                // Debug.Log("spawning " + i + carHere[i, j] + " at: " + curLocation);
             }
-            curLocation = start + new Vector3(0, 0, -3.5f);
+            curLocation.x = start.x;
+            curLocation += new Vector3(0, 0, distLength);
         }
     }
 }
