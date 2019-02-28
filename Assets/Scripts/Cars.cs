@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cars : MonoBehaviour
 {
     public GameObject carPrefab;
+    public Transform[] points;
 
     public bool[,] carHere;
     public int length, width;
@@ -16,6 +17,8 @@ public class Cars : MonoBehaviour
 
     private void Start()
     {
+
+
         carHere = new bool[width, length];
 
         GenerateCars();
@@ -29,15 +32,15 @@ public class Cars : MonoBehaviour
         {
             for (int j = 0; j < length; j++)
             {
-                int trueFalse = Random.Range(0, 2);
+                int trueFalse = Random.Range(0, 3);
 
                 if (trueFalse == 1)
                 {
-                    carHere[i, j] = true;
+                    carHere[i, j] = false;
                 }
                 else
                 {
-                    carHere[i, j] = false;
+                    carHere[i, j] = true;
                 }
                 Debug.Log("("+i+" ," + j + ")" + " " + trueFalse + ", " + carHere[i,j]);
             }

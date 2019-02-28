@@ -23,6 +23,8 @@ public class VerticaCollisionScript : MonoBehaviour
             Debug.Log("COLLIDE");
             this.GetComponent<Rigidbody>().AddForce(transform.up * forceMod, ForceMode.Force);
 
+            this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+
             if (dmg < 3)
             {
                 dmg++;
@@ -42,6 +44,7 @@ public class VerticaCollisionScript : MonoBehaviour
         else if (dmg == 3)
         {
             GetComponent<MeshRenderer>().material = red;
+            GetComponent<Movement>().enabled = false;
         }
     }
 }

@@ -13,11 +13,12 @@ GameObject:
   - component: {fileID: 1580094693133166380}
   - component: {fileID: 1580094693133166381}
   - component: {fileID: 4195531338324217072}
+  - component: {fileID: 3155217256886545049}
   - component: {fileID: 1580094693133166382}
   - component: {fileID: 4424569120865564029}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +107,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e549871098e749af2cf9b927523a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMod: 500
+  forceModMin: 750
+  forceModMax: 600
+  dist: 0.75
+  speed: 1
+  carFront: {fileID: 0}
+--- !u!114 &3155217256886545049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580094693133166383}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afa1351623f01b4abd7d01d4107576e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 0}
 --- !u!54 &1580094693133166382
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -121,7 +139,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 96
   m_CollisionDetection: 0
 --- !u!114 &4424569120865564029
 MonoBehaviour:
@@ -138,3 +156,4 @@ MonoBehaviour:
   forceMod: 300
   red: {fileID: 2100000, guid: e1885613b54b01140885da519fd20dab, type: 2}
   orange: {fileID: 2100000, guid: ded457d5032d3114297a42177c1b68a6, type: 2}
+  dmg: 1
