@@ -42,7 +42,6 @@ public class Cars : MonoBehaviour
                 {
                     carHere[i, j] = true;
                 }
-                Debug.Log("("+i+" ," + j + ")" + " " + trueFalse + ", " + carHere[i,j]);
             }
         }
     }

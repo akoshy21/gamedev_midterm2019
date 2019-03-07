@@ -20,7 +20,10 @@ public class Timer : MonoBehaviour
     {
         Debug.Log(Time.deltaTime);
         timer -= (Time.deltaTime);
-        timerText.text = "Hey! You've got " + (int)timer + " seconds left!";
 
+        if (timer >= 0)
+        {
+            timerText.text = "Hey! You've got " + (int)timer + " seconds left!";
+        }
     }
 }
