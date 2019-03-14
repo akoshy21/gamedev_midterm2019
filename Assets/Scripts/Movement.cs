@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
     public float forceModMin, forceModMax;
     public float dist = 10;
 
+    public float dir = 1; // 1 forward, -1 backwards
+
     public float speed;
 
     public GameObject carFront;
@@ -21,7 +23,7 @@ public class Movement : MonoBehaviour
     {
         CheckForCars();
 
-        GetComponent<Rigidbody>().AddForce(transform.forward * speed * Time.deltaTime, ForceMode.Force);
+        GetComponent<Rigidbody>().AddForce(transform.forward * speed * Time.deltaTime * dir, ForceMode.Force);
         
         Debug.Log("MOVE");
     }

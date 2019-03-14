@@ -3,41 +3,34 @@ guid: aa2acd3accc63f5499590e80e5c43119
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Camera
-    100002: //RootNode
-    100004: Cube
-    100006: Cube.001
-    100008: Cube.002
-    100010: Cube.003
-    100012: Cube.004
-    100014: Cube.005
-    100016: Cube.006
-    100018: Cylinder.000
-    100020: Cylinder.001
-    100022: Cylinder.002
-    100024: Cylinder.003
-    100026: Cylinder.004
-    100028: Cylinder.005
-    100030: Empty
-    100032: Light
-    400000: Camera
-    400002: //RootNode
-    400004: Cube
-    400006: Cube.001
-    400008: Cube.002
-    400010: Cube.003
-    400012: Cube.004
-    400014: Cube.005
-    400016: Cube.006
-    400018: Cylinder.000
-    400020: Cylinder.001
-    400022: Cylinder.002
-    400024: Cylinder.003
-    400026: Cylinder.004
-    400028: Cylinder.005
-    400030: Empty
-    400032: Light
-    2000000: Camera
+    100000: //RootNode
+    100002: Cube
+    100004: Cube.001
+    100006: Cube.002
+    100008: Cube.003
+    100010: Cube.004
+    100012: Cube.005
+    100014: Cube.006
+    100016: Cylinder.000
+    100018: Cylinder.001
+    100020: Cylinder.002
+    100022: Cylinder.003
+    100024: Cylinder.004
+    100026: Cylinder.005
+    400000: //RootNode
+    400002: Cube
+    400004: Cube.001
+    400006: Cube.002
+    400008: Cube.003
+    400010: Cube.004
+    400012: Cube.005
+    400014: Cube.006
+    400016: Cylinder.000
+    400018: Cylinder.001
+    400020: Cylinder.002
+    400022: Cylinder.003
+    400024: Cylinder.004
+    400026: Cylinder.005
     2100000: red
     2100002: tire
     2100004: No Name
@@ -83,7 +76,6 @@ ModelImporter:
     4300020: Cylinder.001
     4300022: Cylinder.003
     4300024: Cylinder.000
-    10800000: Light
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

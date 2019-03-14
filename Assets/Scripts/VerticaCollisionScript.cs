@@ -8,6 +8,8 @@ public class VerticaCollisionScript : MonoBehaviour
     public Material red;
     public Material orange;
 
+    public GameObject carBody;
+
     public int dmg = 1;
 
     private void Update()
@@ -39,11 +41,11 @@ public class VerticaCollisionScript : MonoBehaviour
         if (dmg == 2)
         {
             Debug.Log("ORANGE");
-            GetComponent<MeshRenderer>().material = orange;
+            carBody.GetComponent<MeshRenderer>().material = orange;
         }
         else if (dmg == 3)
         {
-            GetComponent<MeshRenderer>().material = red;
+            carBody.GetComponent<MeshRenderer>().material = red;
             GetComponent<Movement>().enabled = false;
         }
     }
