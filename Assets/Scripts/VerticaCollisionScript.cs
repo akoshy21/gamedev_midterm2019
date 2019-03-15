@@ -22,11 +22,12 @@ public class VerticaCollisionScript : MonoBehaviour
 
         if (col.gameObject.tag.Equals("Player"))
         {
+            Debug.Log("Play");
+            GetComponent<AudioSource>().Play();
             Debug.Log("COLLIDE");
             this.GetComponent<Rigidbody>().AddForce(transform.up * forceMod, ForceMode.Force);
 
             this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            GetComponent<AudioSource>().Play();
 
             if (dmg < 3)
             {

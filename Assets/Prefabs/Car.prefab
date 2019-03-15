@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e549871098e749af2cf9b927523a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceModMin: 600
-  forceModMax: 750
+  forceModMin: 750
+  forceModMax: 900
   dist: 0.75
   dir: 1
   speed: 1
@@ -170,25 +170,24 @@ AudioSource:
   m_GameObject: {fileID: 1580094693133166383}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 7e65b7a3fd6512c48a940c8a8812c24e,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c88f365d470d43a499114cde4766ea7e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.623
+  m_Volume: 0.134
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 132
+  Priority: 120
   DopplerLevel: 1
   MinDistance: 1.8955585
-  MaxDistance: 14.905258
+  MaxDistance: 54.046555
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 1
+  BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
