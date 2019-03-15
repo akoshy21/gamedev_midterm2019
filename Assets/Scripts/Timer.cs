@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class Timer : MonoBehaviour
         if (timeLeft >= 0)
         {
             timerText.text = "Hey! You've got " + (int)timeLeft + " seconds left!";
+        }
+        else {
+            SceneManager.LoadScene(2);
         }
     }
 }

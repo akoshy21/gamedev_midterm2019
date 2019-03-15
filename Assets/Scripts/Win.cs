@@ -11,6 +11,7 @@ public class Win : MonoBehaviour
     public float finalTime;
     public GameObject player;
     public GameObject timer;
+    public bool win;
 
     private void Awake()
     {
@@ -25,18 +26,22 @@ public class Win : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter()
+    void OnTriggerEnter(Collider col)
     {
-        if (timer.GetComponent<Timer>().timeLeft >= 0)
+        if (col.gameObject.tag.Equals("Player"))
         {
-            finalTime = timer.GetComponent<Timer>().timer - timer.GetComponent<Timer>().timeLeft;
-        }
-        else
-        {
-            finalTime = 0;
-        }
+            if (timer.GetComponent<Timer>().timeLeft >= 0)
+            {
+                finalTime = timer.GetComponent<Timer>().timer - timer.GetComponent<Timer>().timeLeft;
+                win = true;
+            }
+            else
+            {
+                finalTime = 0;
+            }
 
-        finalScore = player.GetComponent<TankControl>().score;
-        SceneManager.LoadScene(1);
+            finalScore = player.GetComponent<TankControl>().score;
+            SceneManager.LoadScene(2);
+        }
     }
 }
