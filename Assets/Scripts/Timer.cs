@@ -6,24 +6,25 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float timer;
-    int timeLeft;
+    public float timeLeft;
 
     public Text timerText;
 
     // Start is called before the first frame update
     void Start()
     {
+        timeLeft = timer;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Debug.Log(Time.deltaTime);
-        timer -= (Time.deltaTime);
+        timeLeft -= (Time.deltaTime);
 
-        if (timer >= 0)
+        if (timeLeft >= 0)
         {
-            timerText.text = "Hey! You've got " + (int)timer + " seconds left!";
+            timerText.text = "Hey! You've got " + (int)timeLeft + " seconds left!";
         }
     }
 }

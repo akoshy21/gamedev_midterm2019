@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1580094693133166383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.5, y: -1.49, z: 80.16513}
-  m_LocalScale: {x: 0.99, y: 0.9, z: 3}
+  m_LocalScale: {x: 1.1365789, y: 1.0332536, z: 3.4441786}
   m_Children:
   - {fileID: 1647051145833456539}
   m_Father: {fileID: 0}
@@ -182,8 +182,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 132
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 1.8955585
+  MaxDistance: 14.905258
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
