@@ -1867,7 +1867,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 164
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 471.62
@@ -5420,11 +5420,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290981709858997703, guid: 1fb52654342e8dc4f9a7944a37770361,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fb52654342e8dc4f9a7944a37770361, type: 3}

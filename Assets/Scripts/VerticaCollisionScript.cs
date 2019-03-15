@@ -34,10 +34,7 @@ public class VerticaCollisionScript : MonoBehaviour
                 dmg++;
             }
         }
-        else if (col.gameObject.tag.Equals("Car"))
-        {
-            GetComponent<AudioSource>().Play();
-        }
+
     }
 
 

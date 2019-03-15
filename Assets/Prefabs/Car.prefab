@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17e549871098e749af2cf9b927523a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceModMin: 750
-  forceModMax: 900
+  forceModMin: 600
+  forceModMax: 800
   dist: 0.75
   dir: 1
   speed: 1
@@ -173,7 +173,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c88f365d470d43a499114cde4766ea7e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.134
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -184,7 +184,7 @@ AudioSource:
   MinDistance: 1.8955585
   MaxDistance: 54.046555
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -192,7 +192,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.40844727
       value: 1
       inSlope: 0
       outSlope: 0
