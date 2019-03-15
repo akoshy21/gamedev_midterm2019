@@ -26,11 +26,16 @@ public class VerticaCollisionScript : MonoBehaviour
             this.GetComponent<Rigidbody>().AddForce(transform.up * forceMod, ForceMode.Force);
 
             this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            GetComponent<AudioSource>().Play();
 
             if (dmg < 3)
             {
                 dmg++;
             }
+        }
+        else if (col.gameObject.tag.Equals("Car"))
+        {
+            GetComponent<AudioSource>().Play();
         }
     }
 

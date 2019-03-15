@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
         Ray myRay = new Ray(this.transform.position + new Vector3(0,0,1.7f), Vector3.forward + dist * this.GetComponent<Rigidbody>().velocity);
         RaycastHit myHit;
 
-        Debug.DrawRay(myRay.origin, Vector3.forward + this.GetComponent<Rigidbody>().velocity * dist, Color.red);
+        //Debug.DrawRay(myRay.origin, Vector3.forward + this.GetComponent<Rigidbody>().velocity * dist, Color.red);
 
         if (Physics.Raycast(myRay, out myHit))
         {
